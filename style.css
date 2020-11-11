@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(101, 205, 219);
+    color: rgb(233, 250, 249);
+    font-family: 'Big Shoulders Inline Text', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+h2{
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.container{
+    background-color: rgb(46, 135, 170);
+    padding: 15px;
+    width: 350px;
+}
+
+.result-container{
+    background-color: rgb(41, 64, 73);
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.btn{
+    background-color: rgb(29, 180, 197) ;
+    border: none;
+    color: rgb(233, 250, 249);
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.setting{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+#clipboard{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+}
+
+#generate{
+    font-size: 16px;
+    width: 100%;
+}
+
+@media (max-width: 400px){
+    .result-container{
+        font-size: 14px;
+    }
+}
