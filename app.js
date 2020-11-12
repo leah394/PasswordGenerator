@@ -100,3 +100,23 @@ generateEl.addEventListener('click', () => {
     );
 
 });
+
+clipboardEl.addEventListener('click', () => {
+    const textarea = document.createElement('textarea');
+    const password = resultEl.innerText;
+
+    if (password === ""){
+        return;
+    }
+
+    textarea.value = password;
+
+    const body = document.querySelector('body');
+    body.prepend(textarea);
+
+    textarea.select();
+    document.execCommand('copy');
+    textarea.remove();
+    alert(`Password has been copied to the clipboard!`);
+
+});
